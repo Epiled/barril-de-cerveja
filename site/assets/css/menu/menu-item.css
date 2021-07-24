@@ -1,0 +1,10 @@
+.menu__item{
+  color: white;
+  border-bottom: 1px solid white;
+  line-height: 5rem;
+  transition: 0.5s background-color;
+}
+
+.menu__item:hover{
+  background-color: #6F3600;
+}

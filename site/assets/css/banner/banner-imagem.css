@@ -1,0 +1,11 @@
+.banner__imagem{
+  height: 40rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (min-width: 1368px) {
+    .banner__imagem{
+      height: 72rem;
+    }
+}

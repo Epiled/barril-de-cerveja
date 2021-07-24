@@ -1,0 +1,31 @@
+.rodape__icone{
+  border-radius: 100%;
+  fill: #fff;
+  transition: background 1s, fill 1s;
+}
+
+.rodape__icone:hover{
+  background: #fff;
+  fill: #F07400;
+}
+
+.rodape__icone--logo:hover{
+  background: none;
+}
+
+@media screen and (min-width: 768px) {
+  .rodape__icone{
+    margin-right: 3rem;
+  }
+
+  .rodape__icone:last-child{
+    margin-right: 0;
+  }
+
+  .rodape__icone--logo{
+    margin-bottom: 3rem;
+    margin-right: 0;
+    order: 0;
+    width: 100%;
+  }
+}

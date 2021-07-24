@@ -1,0 +1,9 @@
+.galeria__imagem{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.galeria__imagem--cerveja{
+  object-fit: cover;
+}

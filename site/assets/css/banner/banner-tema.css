@@ -1,0 +1,19 @@
+.banner__tema{
+  color: white;
+  font-family: kaushanScript;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .banner__tema{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  .banner__tema{
+    font-size: 4rem;
+  }
+}

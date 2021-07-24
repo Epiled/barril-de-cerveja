@@ -1,0 +1,10 @@
+.galeria{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .galeria{
+    padding: 0 2.5rem;
+  }
+}

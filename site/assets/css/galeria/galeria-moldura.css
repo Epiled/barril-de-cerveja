@@ -1,0 +1,23 @@
+.galeria__moldura{
+  flex: 50%;
+  height: calc(50vw + 5rem);
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .galeria__moldura{
+    border: 3px solid #F07400;
+    flex: calc(25% - 2rem);
+    height: calc(25vw - 2rem);
+    margin-right: 1rem;
+  }
+
+  .galeria__moldura:last-child{
+    margin-right: 0;
+  }
+
+  .galeria__moldura--cerveja{
+    border-color: white;
+  }
+
+}

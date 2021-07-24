@@ -1,0 +1,30 @@
+@font-face {
+    font-family: kaushanScript;
+    src: url(../fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mukta;
+    src: url(../fonts/Mukta-Regular.tff);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+p{
+  font-family: Mukta;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  p{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  p{
+    font-size: 2.5rem;
+  }
+}

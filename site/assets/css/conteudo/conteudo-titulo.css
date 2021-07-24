@@ -1,0 +1,16 @@
+.conteudo__titulo{
+  color: #BD5B00;
+  font-family: Mukta;
+  font-size: 2.3rem;
+  padding: 3rem 0;
+}
+
+.conteudo__titulo--cerveja{
+  color: white;
+}
+
+@media screen and (min-width:768px) {
+  .conteudo__titulo{
+    font-size: 3.5rem;
+  }
+}

@@ -1,0 +1,35 @@
+.banner__conteudo{
+  align-items: center;
+  background: url("../../imgs/wood-escura.jpg") no-repeat center / cover;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  left: 50%;
+  max-width: 400px;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: 35rem;
+  transform: translate(-50%, 0);
+  width: calc(100% - 1.5rem);
+}
+
+@media screen and (min-width: 768px) {
+  .banner__conteudo{
+    left: 1.5rem;
+    max-width: 450px;
+    padding: 1.5rem 1.5rem;
+    top: 31.5rem;
+    transform: none;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  .banner__conteudo{
+    left: 1.5rem;
+    max-width: 500px;
+    top: 57.5rem;
+  }
+}

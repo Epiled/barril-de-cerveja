@@ -1,0 +1,13 @@
+.menu__barra{
+  background-image: linear-gradient(#F07400, #F07400 24rem, #6F3600);
+  font-family: Mukta;
+  font-size: 2.5rem;
+  height: calc(100vh - 5rem);
+  left: 0;
+  max-width: 30rem;
+  width: 28rem;
+  position: absolute;
+  top: 5rem;
+  transition: 0.5s left;
+  z-index: 1;
+}

@@ -1,0 +1,9 @@
+.conteudo{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo--cerveja{
+  background: #BD5B00;
+}

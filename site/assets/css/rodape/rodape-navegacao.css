@@ -1,0 +1,9 @@
+.rodape__navegacao{
+  order: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .rodape__navegacao{
+    order: 1;
+  }
+}

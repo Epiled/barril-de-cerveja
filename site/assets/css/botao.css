@@ -1,0 +1,18 @@
+.botao{
+  background: #F07400;
+  border: 3px solid #6F3600;
+  border-radius: 5px;
+  color: white;
+  font-family: Mukta;
+  font-size: 2rem;
+  height: 5rem;
+  margin: 4rem 0;
+  padding: 0 3rem;
+  transition: background 0.5s ease-in-out, color 0.5s;
+  text-transform: uppercase;
+}
+
+.botao:hover{
+  color: #F07400;
+  background: white;
+}
