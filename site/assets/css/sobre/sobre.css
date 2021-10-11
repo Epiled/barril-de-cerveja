@@ -1,0 +1,12 @@
+.sobre{
+    font-size: 1.5rem;
+    color: #636363;
+    line-height: 2.5rem;
+}
+
+@media screen and (min-width: 1366px) {
+    .sobre{
+        font-size: 1.9rem;
+        line-height: 3.1rem;
+    }
+}

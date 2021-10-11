@@ -1,0 +1,10 @@
+.login__icone {
+    width: 17rem;
+    fill: white;
+}
+
+@media screen and (min-width: 768px) {   
+    .login__icone{
+        width: 25rem;
+    }
+}

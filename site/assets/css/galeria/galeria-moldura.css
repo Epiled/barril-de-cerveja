@@ -1,5 +1,5 @@
 .galeria__moldura{
-  flex: 50%;
+  width: 50%;
   height: calc(50vw + 5rem);
   position: relative;
 }
@@ -7,9 +7,16 @@
 @media screen and (min-width: 768px) {
   .galeria__moldura{
     border: 3px solid #F07400;
-    flex: calc(25% - 2rem);
+    width: calc(25% - 2rem);
     height: calc(25vw - 2rem);
     margin-right: 1rem;
+  }
+
+  .galeria__moldura--alternativa{
+    border: 0;
+    height: calc(100vw / 3);height: calc(100vw / 3);
+    width: calc(100% / 3);
+    margin: 0;
   }
 
   .galeria__moldura:last-child{
@@ -19,5 +26,11 @@
   .galeria__moldura--cerveja{
     border-color: white;
   }
+}
 
+@media screen and (min-width: 1368px){
+  .galeria__moldura--alternativa{
+    height: calc(100vw / 5);
+    width: 20%;
+  }
 }

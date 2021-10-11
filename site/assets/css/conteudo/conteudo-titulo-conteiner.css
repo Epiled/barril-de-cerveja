@@ -1,0 +1,15 @@
+.conteudo__tituloConteiner{
+    background: #F07400;
+    align-self: baseline;
+    width: 100%;
+    padding: .5rem 3rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  
+  .conteudo__tituloConteiner--cerveja{
+    height: 8rem;
+  }

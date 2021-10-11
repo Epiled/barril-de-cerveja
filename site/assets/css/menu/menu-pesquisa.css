@@ -1,0 +1,28 @@
+.menu__pesquisa{
+    border-radius: 5rem;
+    border: 0;
+    max-width: calc(100% - 11rem);;
+    width: 0%;
+    height: 4rem;
+    outline: 0;
+    font-size: 2.4rem;
+    padding: 0;
+    position: absolute;
+}
+
+.menu__pesquisa--ativo{
+    width: 100%;
+    padding: 0 1.6rem;
+    border: .1rem solid #6F3600;
+}
+
+@media screen and (min-width: 1368px){
+    .menu__pesquisa{
+        margin-left: auto;
+        max-width: 23rem;
+        width: 100%;
+        padding: 0 1rem 0 5.2rem;
+        border: .1rem solid #6F3600;
+        position: relative;
+    }
+}

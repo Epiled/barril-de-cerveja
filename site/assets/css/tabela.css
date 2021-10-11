@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.tabela {
+    border-collapse: separate;
+    border: .1rem solid #FF8D0A;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tabela__linha{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.tabela__cabecalho{
+    background: #FF8D0A;
+    border-bottom: .1rem solid white;
+    color: white;
+    text-align: left;
+    padding: 1.1rem 2rem;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+}
+
+.tabela__dado{
+    border-bottom: .1rem solid #707070;
+    color: #707070;
+    padding: 1.1rem 2rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.tabela__cabecalho--ultimo{
+    border: 0;
+}
+
+.tabela__dado--ultimo{
+    border: 0;
+}
+
+.cerveja__imagem{
+    width: 100%;
+    height: 29rem;
+    background-image: url("../imgs/cerveja-brahma.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo__infos{
+    width: 100%;
+}
+
+.cerveja__origem{
+    width: 100%;
+    padding: 0 3rem 3rem 3rem;
+    box-sizing: border-box;
+}
+
+.cerveja__texto{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+    margin-bottom: 3rem;
+}
+
+.cerveja__texto:last-of-type{
+    margin: 0;
+}
+
+.conteudo__conteiner{
+    max-width: 136.8rem;
+}
+
+@media screen and (min-width: 768px){
+    .conteudo__infos{
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .cerveja__imagem{
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1368px){
+    .conteudo__infos{
+        padding: 3rem 3rem 0rem 3rem;
+        box-sizing: border-box;
+    }
+}

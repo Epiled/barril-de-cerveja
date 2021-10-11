@@ -1,0 +1,77 @@
+.sobre__imagem{
+    border: .3rem solid #F07400;
+    border-radius: .5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sobre__imagem--espaco{
+    margin-bottom: 3rem;
+}
+
+.sobre__imagem--ninkasi{
+    border-radius: 100%;
+    margin-bottom: 0;
+    justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre__imagem--ninkasi{
+        float: left;
+    }
+
+    .sobre__imagem--chifre{
+        float: left;
+        width: 48%;
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+
+    .sobre__imagem--vaso{
+        float: right;
+        width: 42%;
+        margin-left: 3rem;
+    }
+
+    .sobre__imagem--caverna{
+        float: right;
+        width: 42%;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .sobre__imagem--chifre{
+        width: 100%;
+        max-height: 42.5rem;
+        float: left;
+        object-fit: contain;
+        margin-right: 0;
+    }
+
+    .sobre__imagem--vaso{
+        width: calc(50% - 1.5rem);
+        max-height: 48.8rem;
+        object-fit: contain;
+        margin-left: 3rem;
+    }
+
+    .sobre__imagem--caverna{
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .sobre__imagem--sorvete{
+        height: 33.2rem;
+    }
+
+    .sobre__imagem--pascoa{
+        height: 33.2rem;
+    }
+
+    .sobre__imagem--ninkasi{
+        max-height: 48.8rem;
+        width: auto;
+    }
+}

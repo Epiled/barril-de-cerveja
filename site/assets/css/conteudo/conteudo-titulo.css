@@ -6,7 +6,17 @@
 }
 
 .conteudo__titulo--cerveja{
+    color: #FF8D0A;
+    text-align: left;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.conteudo__titulo--alternativo{
   color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 3.5rem;
 }
 
 @media screen and (min-width:768px) {

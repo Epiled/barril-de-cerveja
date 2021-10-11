@@ -1,0 +1,13 @@
+.login__iconeConteiner{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -13rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .login__iconeConteiner{
+        top: -17rem;
+    }
+}

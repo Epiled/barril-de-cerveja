@@ -1,7 +1,8 @@
 .menu__icone{
   fill: white;
-  stroke: #fff;
-  transition: 0.5s stroke, 0.5s fill;
+  /*stroke: #fff;*/
+  stroke-width: 0;
+  transition: 0.5s fill;
 }
 
 .menu__icone:hover{
@@ -11,8 +12,32 @@
 
 .menu__icone--logo{
   stroke: none;
+  height: 4rem;
 }
 
 .menu__icone--logo:hover{
   stroke: none;
+}
+
+.menu__icone--lupa{
+  height: 3.4rem;
+}
+
+.menu__icone--hamburguer{
+  height: 2rem;
+}
+
+.menu__icone--filtro{
+  height: 1.8rem;
+}
+
+@media screen and (min-width: 1368px){
+  .menu__icone--lupa{
+    position: absolute;
+    right: 21rem;
+    order: 1;
+    z-index: 1;
+    stroke: #F07400;
+    fill:  #F07400;
+  }
 }

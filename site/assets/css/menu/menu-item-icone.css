@@ -1,5 +1,7 @@
 .menu__itemIcone{
   fill: white;
-  height: 35px;
+  width: 3.5rem;
   vertical-align: middle;
+  margin-left: 1rem;
+  margin-right: .5rem;
 }

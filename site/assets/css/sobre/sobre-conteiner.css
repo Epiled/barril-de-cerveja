@@ -1,0 +1,32 @@
+.sobre__conteiner{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre__conteiner{
+        display: block;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .sobre__conteiner{
+        display: grid;
+        grid-template-columns: calc(50% - 1.5rem)calc(50% - 1.5rem);
+        grid-gap: 3rem;
+        margin: 0;
+    }
+
+    .sobre__conteiner--vaso{
+        overflow: auto;
+        display: inline-block;
+    }
+
+    .sobre__conteiner--egipcios{
+        display: grid;
+        grid-template-columns: calc(50% - 1.5rem) calc(50% - 1.5rem);
+        grid-gap: 3rem;
+    }
+}

@@ -3,11 +3,24 @@
   font-family: Mukta;
   font-size: 2.5rem;
   height: calc(100vh - 5rem);
-  left: 0;
   max-width: 30rem;
-  width: 28rem;
   position: absolute;
+  left: 0rem;
   top: 5rem;
   transition: 0.5s left;
+  width: 28rem;
   z-index: 1;
+}
+
+.menu__barra--fechado{
+  left: -28rem;
+}
+
+@media screen and (min-width: 1368px){
+  .menu__barra{
+    height: auto;
+    max-width: none;
+    position: static;
+    width: auto;
+  }
 }

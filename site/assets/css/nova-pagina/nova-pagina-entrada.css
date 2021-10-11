@@ -1,0 +1,36 @@
+.novaPagina__entrada{
+    border: .3rem solid #F07400;
+    height: 5rem;
+    box-sizing: border-box;
+    border-radius: .3rem;
+    font-size: 2rem;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.novaPagina__entrada--origem{
+    resize: horizontal;
+    min-height: 23rem;
+}
+
+.novaPagina__entrada--imagem{
+    min-height: 16.5rem;
+    padding: 2rem 3rem;
+    background-image: url(./assets/imgs/coloque-imagem.png);
+}
+
+.novaPagina__entrada--invisivel{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .novaPagina__entrada--imagem{
+        min-height: 23rem;
+    }
+}
+
+@media screen and (min-width: 1368px){
+    .novaPagina__entrada--imagem{
+        min-height: 30rem;
+    }
+}

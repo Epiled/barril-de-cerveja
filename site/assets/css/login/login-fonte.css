@@ -1,0 +1,8 @@
+.login__fonte{
+    font-size: 2rem;
+    color: #707070;
+}
+
+.login__fonte--botao{
+    text-transform: uppercase;
+}

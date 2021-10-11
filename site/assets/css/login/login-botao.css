@@ -1,0 +1,8 @@
+.login__botao{
+    background: #F07400;
+    border: .3rem solid #6F3600;
+    border-radius: .5rem;
+    color: white;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}

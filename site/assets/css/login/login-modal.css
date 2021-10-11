@@ -1,0 +1,14 @@
+.login__modal{
+    width: 27.5rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {   
+    .login__modal{
+        width: 45rem;
+    }
+}

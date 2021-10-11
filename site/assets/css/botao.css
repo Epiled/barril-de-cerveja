@@ -16,3 +16,22 @@
   color: #F07400;
   background: white;
 }
+
+.botao--novaPagina{
+  margin: 0;
+  width: 15rem;
+  padding: 0;
+}
+
+.botao--cancelar{
+  background: none;
+  color: #FF0000;
+  border-color: #8D0000;
+}
+
+.botao--filtro{
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}

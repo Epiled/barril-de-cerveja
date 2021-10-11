@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) {
+    .sobre__gridTexto {
+        margin-bottom: 0;
+    }
+
+    .sobre__gridTexto--meio {
+        grid-column: 1/ span 2;
+    }
+}
