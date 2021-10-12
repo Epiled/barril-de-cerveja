@@ -1,0 +1,11 @@
+.tabela__dado{
+    border-bottom: .1rem solid var(--cor-texto);
+    color: var(--cor-texto);
+    padding: 1.1rem 2rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.tabela__dado--ultimo{
+    border: 0;
+}

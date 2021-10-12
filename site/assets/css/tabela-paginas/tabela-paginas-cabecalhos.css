@@ -1,0 +1,4 @@
+.tabelaPaginas__cabecalhos{
+    background: var(--cor-tabela-cabecalho);
+    max-height: 5rem;
+}

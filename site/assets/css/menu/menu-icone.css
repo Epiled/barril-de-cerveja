@@ -1,13 +1,12 @@
 .menu__icone{
   fill: white;
-  /*stroke: #fff;*/
   stroke-width: 0;
   transition: 0.5s fill;
 }
 
 .menu__icone:hover{
-  fill: #6F3600;
-  stroke: #6F3600;
+  fill: var(--cor-complementar);
+  stroke: var(--cor-complementar);
 }
 
 .menu__icone--logo{
@@ -25,6 +24,7 @@
 
 .menu__icone--hamburguer{
   height: 2rem;
+  vertical-align: middle;
 }
 
 .menu__icone--filtro{
@@ -37,7 +37,7 @@
     right: 21rem;
     order: 1;
     z-index: 1;
-    stroke: #F07400;
-    fill:  #F07400;
+    stroke: var(--cor-principal);
+    fill:  var(--cor-principal);
   }
 }

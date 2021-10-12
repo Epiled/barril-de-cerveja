@@ -1,0 +1,13 @@
+.cerveja__imagem{
+    width: 100%;
+    height: 29rem;
+    background-image: url("../imgs/cerveja-brahma.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 768px){
+    .cerveja__imagem{
+        height: auto;
+    }
+}

@@ -1,5 +1,5 @@
 .login{
-    background-image: linear-gradient(to bottom left, #6F3600, #F07400);
+    background-image: linear-gradient(to bottom left, var(--cor-complementar), var(--cor-principal));
     height: 100vh;
     display: flex;
     justify-content: center;

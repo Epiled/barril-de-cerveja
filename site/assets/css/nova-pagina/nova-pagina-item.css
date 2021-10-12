@@ -1,20 +1,11 @@
 @media screen and (min-width: 768px){
-
-    .novaPagina__item--imagem{
-        grid-column: 1/2 span;
-    }
-
-    .novaPagina__item--origem{
+    .novaPagina__item--expande{
         grid-column: 1/2 span;
     }
 }
 
 @media screen and (min-width: 1368px){
-    .novaPagina__item--imagem{
-        grid-column: 1/3 span;
-    }
-
-    .novaPagina__item--origem{
+    .novaPagina__item--expande{
         grid-column: 1/3 span;
     }
 

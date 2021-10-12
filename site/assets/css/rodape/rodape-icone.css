@@ -6,7 +6,7 @@
 
 .rodape__icone:hover{
   background: #fff;
-  fill: #F07400;
+  fill: var(--cor-principal);
 }
 
 .rodape__icone--logo{
@@ -24,7 +24,7 @@
 }
 
 .rodape__icone--social:hover{
-  border: .1rem solid #F07400;
+  border: .1rem solid var(--cor-principal);
 }
 
 @media screen and (min-width: 768px) {

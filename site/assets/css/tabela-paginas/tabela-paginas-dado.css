@@ -1,0 +1,13 @@
+.tabelaPaginas__dado{
+    padding: 1.75rem 0;
+    text-align: center;
+    border: .1rem solid black;
+}
+
+.tabelaPaginas__dados:nth-child(odd){
+    background: var(--cor-principal);
+}
+
+.tabelaPaginas__dados:nth-child(even){
+    background: var(--cor-complementar);
+}

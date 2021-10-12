@@ -1,5 +1,5 @@
 .sobre__imagem{
-    border: .3rem solid #F07400;
+    border: .3rem solid var(--cor-principal);
     border-radius: .5rem;
     width: 100%;
     box-sizing: border-box;

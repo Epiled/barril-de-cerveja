@@ -1,0 +1,17 @@
+.filtro__itens{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: .3rem solid var(--cor-principal);
+    padding-bottom: .5rem;
+}
+
+@media screen and (min-width: 768px){
+    .filtro__itens{
+        border: 0;
+        padding: 0;
+    }
+
+    .filtro__itens--orderm{
+        grid-template-columns: auto;
+    }
+}

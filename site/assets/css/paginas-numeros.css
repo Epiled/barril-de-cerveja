@@ -1,0 +1,4 @@
+.paginas__numeros{
+    color: var(--cor-principal);
+    display: flex;
+}

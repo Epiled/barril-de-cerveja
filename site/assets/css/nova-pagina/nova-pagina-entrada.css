@@ -1,5 +1,5 @@
 .novaPagina__entrada{
-    border: .3rem solid #F07400;
+    border: .3rem solid var(--cor-principal);
     height: 5rem;
     box-sizing: border-box;
     border-radius: .3rem;

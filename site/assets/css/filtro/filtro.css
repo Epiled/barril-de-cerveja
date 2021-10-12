@@ -1,0 +1,27 @@
+.filtro{
+    background: white;
+    box-sizing: border-box;
+    color: var(--cor-texto-alternativa);
+    font-size: 2.5rem;
+    position: absolute;
+    top: 14.2rem;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    transition: top 1s;
+    padding: 1.5rem 0rem 1rem 0rem;
+    border: .3rem solid var(--cor-principal);
+    height: auto;
+    transition: top 1s;
+}
+
+.filtro--fechado{
+    transition: top 1s;
+}
+
+@media screen and (min-width: 768px){
+    .filtro{
+        display: grid;
+        grid-template-columns: auto auto 20rem;
+    }
+}

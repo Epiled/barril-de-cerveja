@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 768px) {
   .galeria__moldura{
-    border: 3px solid #F07400;
+    border: .3rem solid var(--cor-principal);
     width: calc(25% - 2rem);
     height: calc(25vw - 2rem);
     margin-right: 1rem;
@@ -14,7 +14,7 @@
 
   .galeria__moldura--alternativa{
     border: 0;
-    height: calc(100vw / 3);height: calc(100vw / 3);
+    height: calc(100vw / 3);
     width: calc(100% / 3);
     margin: 0;
   }

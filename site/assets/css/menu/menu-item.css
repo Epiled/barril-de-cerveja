@@ -2,11 +2,12 @@
   color: white;
   border-bottom: .1rem solid white;
   line-height: 5rem;
+  cursor: pointer;
   transition: 0.5s background-color;
 }
 
 .menu__item:hover{
-  background-color: #6F3600;
+  background-color: var(--cor-complementar);
 }
 
 @media screen and (min-width: 1368px){

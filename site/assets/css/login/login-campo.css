@@ -1,5 +1,5 @@
 .login__campo{
-    border: .3rem solid #F07400;
+    border: .3rem solid var(--cor-principal);
     padding: .5rem;
     height: 5rem;
     box-sizing: border-box;

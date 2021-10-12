@@ -1,15 +1,17 @@
 .conteudo__titulo{
-  color: #BD5B00;
+  color: var(--cor-principal);
   font-family: Mukta;
   font-size: 2.3rem;
   padding: 3rem 0;
 }
 
+.conteudo__titulo--cervejaAlternativo{
+  font-size: 3rem;
+  margin: 0;
+}
+
 .conteudo__titulo--cerveja{
-    color: #FF8D0A;
-    text-align: left;
-    font-size: 3rem;
-    margin: 0;
+  color: white;
 }
 
 .conteudo__titulo--alternativo{

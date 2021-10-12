@@ -1,6 +1,6 @@
 .menu__base{
   align-items: center;
-  background: #F07400;
+  background: var(--cor-principal);
   box-sizing: border-box;
   display: flex;
   height: 5rem;

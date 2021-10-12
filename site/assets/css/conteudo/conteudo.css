@@ -5,5 +5,5 @@
 }
 
 .conteudo--cerveja{
-  background: #BD5B00;
+  background: var(--cor-secundaria);
 }

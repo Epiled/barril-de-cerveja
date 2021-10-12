@@ -1,3 +1,7 @@
 .breadcrumb__link{
-    color: #F07400;
+    color: var(--cor-principal);
+}
+
+.breadcrumb__link:visited{
+    color: var(--cor-principal);
 }

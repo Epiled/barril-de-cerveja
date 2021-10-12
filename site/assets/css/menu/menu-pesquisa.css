@@ -13,7 +13,7 @@
 .menu__pesquisa--ativo{
     width: 100%;
     padding: 0 1.6rem;
-    border: .1rem solid #6F3600;
+    border: .1rem solid var(--cor-complementar);
 }
 
 @media screen and (min-width: 1368px){
@@ -22,7 +22,7 @@
         max-width: 23rem;
         width: 100%;
         padding: 0 1rem 0 5.2rem;
-        border: .1rem solid #6F3600;
+        border: .1rem solid var(--cor-complementar);
         position: relative;
     }
 }

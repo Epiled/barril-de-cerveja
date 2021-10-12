@@ -1,5 +1,5 @@
 .menu__barra{
-  background-image: linear-gradient(#F07400, #F07400 24rem, #6F3600);
+  background-image: linear-gradient(var(--cor-principal), var(--cor-principal) 24rem, var(--cor-complementar));
   font-family: Mukta;
   font-size: 2.5rem;
   height: calc(100vh - 5rem);

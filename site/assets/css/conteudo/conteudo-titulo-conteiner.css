@@ -1,5 +1,5 @@
 .conteudo__tituloConteiner{
-    background: #F07400;
+    background: var(--cor-principal);
     align-self: baseline;
     width: 100%;
     padding: .5rem 3rem;

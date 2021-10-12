@@ -1,8 +1,15 @@
 .titulo{
     font-size: 3.5rem;
     color: white;
-    background: #F07400;
+    background: var(--cor-principal);
     margin: 0;
     text-align: center;
     padding: 1rem 3rem;
+}
+
+.titulo--adm{
+    background: none;
+    align-self: flex-start;
+    color: var(--cor-texto);
+    padding: 3rem 3rem 0 3rem;
 }

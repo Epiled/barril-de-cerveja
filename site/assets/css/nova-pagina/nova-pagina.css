@@ -1,5 +1,5 @@
 .novaPagina{
     padding: 6rem 3rem 3rem 3rem;
-    color: #707070;
+    color: var(--cor-texto);
     font-size: 2rem;
 }

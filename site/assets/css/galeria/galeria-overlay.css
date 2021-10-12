@@ -1,6 +1,6 @@
 .galeria__overlay{
   align-items: center;
-  background-color: #2F1700;
+  background-color: var(--cor-tercearia);
   bottom: 0;
   display: flex;
   height: 5rem;
@@ -13,6 +13,6 @@
 
 @media screen and (min-width: 768px) {
   .galeria__overlay{
-    background-color: rgba(45, 23, 0, 0.75);
+    background-color: var(--cor-tercearia-opacidade);
   }
 }

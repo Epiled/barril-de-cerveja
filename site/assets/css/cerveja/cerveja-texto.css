@@ -1,0 +1,10 @@
+.cerveja__texto{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-texto);
+    margin-bottom: 3rem;
+}
+
+.cerveja__texto:last-of-type{
+    margin: 0;
+}

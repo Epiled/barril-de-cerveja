@@ -1,0 +1,15 @@
+.tabelaPaginas__botao{
+    padding: 1.65rem 0;
+    width: 100%;
+    color: white;
+    outline: 0;
+    border: 0;
+}
+
+.tabelaPaginas__botao--editar{
+    background: #0080F0;
+}
+
+.tabelaPaginas__botao--excluir{
+    background: #F00000;
+}

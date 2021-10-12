@@ -1,0 +1,18 @@
+.filtro__tipoConteiner{
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.filtro__tipoConteiner:first-of-type{
+    padding-top: 0;
+}
+
+@media screen and (min-width: 768px){
+    .filtro__tipoConteiner{
+        padding-top: 0;
+        border-right: .3rem solid var(--cor-principal);
+    }
+
+    .filtro__tipoConteiner:last-of-type{
+        border: 0;
+    }
+}

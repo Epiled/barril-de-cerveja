@@ -1,7 +1,7 @@
 .botao{
-  background: #F07400;
-  border: 3px solid #6F3600;
-  border-radius: 5px;
+  background: var(--cor-principal);
+  border: .3rem solid var(--cor-complementar);
+  border-radius: .5rem;
   color: white;
   font-family: Mukta;
   font-size: 2rem;
@@ -13,7 +13,7 @@
 }
 
 .botao:hover{
-  color: #F07400;
+  color: var(--cor-principal);
   background: white;
 }
 

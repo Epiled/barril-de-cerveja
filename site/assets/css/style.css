@@ -2,6 +2,23 @@
   max-width: 1366px;
 } */
 
+:root{
+  --cor-principal: #F07400;
+  --cor-secundaria: #BD5B00;
+  --cor-tercearia: #2F1700;
+  --cor-tercearia-opacidade: rgba(45, 23, 0, 0.75);
+  --cor-tabela-cabecalho: #231100;
+  --cor-complementar: #6F3600;
+  --cor-texto: #707070;
+  --cor-texto-alternativa: #636363;
+}
+
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited{
+  color: white;
 }

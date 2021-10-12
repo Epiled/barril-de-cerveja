@@ -1,0 +1,4 @@
+.rodape__link:hover{
+    color: var(--cor-principal);
+    transition: color 1s;
+}
