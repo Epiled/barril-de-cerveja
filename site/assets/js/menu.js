@@ -1,7 +1,7 @@
 let $ = document.querySelector.bind(document);
 
 let menuBotao = $('.menu__botao');
-let menuBarra = $('.menu__barra');
+let menuBarra = $('.menu__barra--fechado')
 
 menuBotao.onclick = function(){
   document.documentElement.classList.toggle('menu__ativo');
@@ -15,9 +15,3 @@ document.documentElement.onclick = function(event){
   };
 };
 
-let barraPesquisa = $('.menu__pesquisa');
-let menuIconePesquisa = $('.menu__icone--lupa');
-
-menuIconePesquisa.onclick = () => {
-  barraPesquisa.classList.toggle('menu__pesquisa--ativo');
-}

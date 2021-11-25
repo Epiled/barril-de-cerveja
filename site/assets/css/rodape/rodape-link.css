@@ -2,3 +2,20 @@
     color: var(--cor-principal);
     transition: color 1s;
 }
+
+.rodape__link--home{
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .rodape__link{
+        margin-right: 3rem;
+      }
+    
+      .rodape__link:last-child{
+        margin-right: 0;
+      }
+    }

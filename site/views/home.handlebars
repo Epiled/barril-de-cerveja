@@ -1,0 +1,8 @@
+<p>Olá</p>
+{{#each posts}}
+<p>{{dataValues.nomeCerveja}}</p>
+<p>{{dataValues.senha}}</p>
+<p>{{dataValues.cargo}}</p>
+<a href="/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+<hr>
+{{/each}}

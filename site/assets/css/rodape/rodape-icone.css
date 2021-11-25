@@ -28,14 +28,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .rodape__icone{
-    margin-right: 3rem;
-  }
-
-  .rodape__icone:last-child{
-    margin-right: 0;
-  }
-
   .rodape__icone--logo{
     margin-bottom: 3rem;
     margin-right: 0;

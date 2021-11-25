@@ -16,7 +16,7 @@
 .novaPagina__entrada--imagem{
     min-height: 16.5rem;
     padding: 2rem 3rem;
-    background-image: url(./assets/imgs/coloque-imagem.png);
+    background-image: url(imgs/coloque-imagem.png);
 }
 
 .novaPagina__entrada--invisivel{
