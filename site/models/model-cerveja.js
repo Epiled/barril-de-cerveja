@@ -2,7 +2,7 @@ const db = require("./model-conexaoCervejas");
 
 const Post = db.sequelize.define("cervejas", {
     imagemCerveja: {
-        type: db.Sequelize.BLOB
+        type: db.Sequelize.STRING
     },
     nomeCerveja: {
         type: db.Sequelize.STRING

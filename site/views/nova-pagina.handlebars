@@ -139,12 +139,12 @@
 
     <main class="novaPagina">
         <h1 class="novaPagina__titulo">Nova página "Cerveja"</h1>
-        <form action="nova-pagina-add" method="post" class="novaPagina__formulario">
+        <form action="nova-pagina" method="post" enctype="multipart/form-data" class="novaPagina__formulario">
             <div class="novaPagina__item--expande">
                 <label for="novaPagina__imagem">Cerveja imagem</label>
                 <img id="imagem" data-imagemFormulario src="imgs/coloque-imagem.png" alt="" class="novaPagina__entrada novaPagina__entrada--imagem">
                 <input id="novaPagina__imagem" name="imagemCerveja" class="novaPagina__entrada--invisivel" data-entradaImagem type="file"
-                    alt="Carregue uma imagem aqui" accept="image/png, image/jpeg">
+                    alt="Carregue uma imagem aqui"><!--accept="image/png, image/jpeg"-->
             </div>
 
             <div class="novaPagina__item">

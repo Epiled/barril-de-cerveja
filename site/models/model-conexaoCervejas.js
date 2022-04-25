@@ -6,7 +6,7 @@ const sequelize = new Sequelize('barril-cerveja', 'root', 'admin', {
 
 const Cervejas = sequelize.define('cervejas', {
     imagemCerveja: {
-        type: Sequelize.BLOB
+        type: Sequelize.STRING
     },
     nomeCerveja: {
         type: Sequelize.STRING
