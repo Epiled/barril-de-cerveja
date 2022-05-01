@@ -14,7 +14,7 @@ app.set('view engine', 'handlebars')
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb){
-        cb(null,"uploads/")
+        cb(null,"assets/imgs/")
     },
     filename: function(req, file, cb){
         cb(null, file.originalname)
@@ -40,28 +40,11 @@ app.post('/profile', upload.single('imagemCerveja'), function (req, res, next) {
     res.send("Post criado com sucesso!")
   })
 
-app.post('/upload', function(req, res) {
-    //console.log(req.files.foo); // the uploaded file object
-    let img = req.files.imagem;
-    //let dirImg = __dirname + img;
-    let dirImg = __dirname + '/assets/imgs/' + img.name; 
-    //img.mv(__dirname + "assets/js");
+app.post("/nova-pagina", upload.single("imagemCerveja"), function(req, res, next) {
 
-    img.mv(dirImg)
-    return res.json(img)
-  });
-
-app.post("/nova-pagina", upload.single("imagemCerveja"), function(req, res) {
-
-    //let img = req.files.imagemCerveja;
-    //console.log(req.files.imagemCerveja)
-    //let dirImg = __dirname + '/assets/imgs/' + img;
-    //let imgName = img.name;
-
-    //img.mv(img)
-
-    /*Post.create({
-        imagemCerveja: req.body.imagemCerveja,
+    Post.create({
+        //imagemCerveja: req.file.path.replace(/\\/g,"/"),
+        imagemCerveja: req.file.filename,
         nomeCerveja: req.body.nomeCerveja,
         tipo: req.body.tipo,
         teorAlcoolico: req.body.teorAlcoolico,
@@ -75,9 +58,9 @@ app.post("/nova-pagina", upload.single("imagemCerveja"), function(req, res) {
         res.send(post.imagemCerveja+"Post criado com sucesso!")
     }).catch(function(erro){
         res.send("Houve um erro: " + erro)
-    })*/
-    let teste = req.file
-    res.send(res.json(teste) + "Post criado com sucesso!")
+    })
+    let teste = req.file.path
+    res.json(teste)
 })
 
 app.get("/", function(req, res){
@@ -86,8 +69,8 @@ app.get("/", function(req, res){
             [Op.or]:[
                 {id: 1},
                 {id: 2},
-                {id: 17},
-                {id: 18}
+                {id: 52},
+                {id: 51}
             ]
         }
     }).then(function(posts){
