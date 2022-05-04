@@ -8,6 +8,7 @@ const path = require('path')
 const { dirname } = require('path');
 const { Op } = require("sequelize");
 const multer = require("multer");
+const admin = require("./routes/admin")
 
 app.engine('handlebars', handlebars({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
@@ -31,19 +32,12 @@ app.use('/svgs', express.static(__dirname + '/assets/svgs'))
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
-//app.use(fileUpload());
 
-
-app.post('/profile', upload.single('imagemCerveja'), function (req, res, next) {
-    // req.file is the `avatar` file
-    // req.body will hold the text fields, if there were any
-    res.send("Post criado com sucesso!")
-  })
+app.use("/admin", admin)
 
 app.post("/nova-pagina", upload.single("imagemCerveja"), function(req, res, next) {
 
     Post.create({
-        //imagemCerveja: req.file.path.replace(/\\/g,"/"),
         imagemCerveja: req.file.filename,
         nomeCerveja: req.body.nomeCerveja,
         tipo: req.body.tipo,
@@ -69,8 +63,8 @@ app.get("/", function(req, res){
             [Op.or]:[
                 {id: 1},
                 {id: 2},
-                {id: 52},
-                {id: 51}
+                {id: 3},
+                {id: 4}
             ]
         }
     }).then(function(posts){
@@ -92,30 +86,6 @@ app.get("/marcas", function(req, res){
     })
 })
 
-app.get("/posts", function(req, res) {
-    Post.findAll().then(function(posts){
-        res.render('home', {posts: posts})
-    })
-})
 
-app.get('/login', function(req, res){
-    res.render('login');
-})
-
-app.get('/nova-pagina', function(req, res){
-    res.render('nova-pagina');
-})
-
-app.get('/paginas', function(req, res) {
-    Post.findAll().then(function(posts){
-        res.render('paginas', {posts: posts})
-    })
-})
-
-app.get('/deletar/:id', function(req, res){
-    Post.destroy({where: {'id': req.params.id}}).then(() =>{
-        res.redirect('/paginas')
-    })
-})
 
 app.listen(8081, function () { console.log("Servidor") })

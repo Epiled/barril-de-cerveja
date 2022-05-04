@@ -215,7 +215,7 @@
         <section class="conteudo conteudo--cerveja">
             <h2 class="conteudo__titulo conteudo__titulo--cerveja">Conheça algumas cerveja!</h2>
             <div class="galeria">
-                <div class="galeria__moldura galeria__moldura--cerveja">
+                <!--<div class="galeria__moldura galeria__moldura--cerveja">
                     <img class="galeria__imagem galeria__imagem--cerveja" src="imgs/cerveja-heineken.jpg" />
                     <div class="galeria__overlay">
                         <h3 class="galeria__titulo">Heineken</h3>
@@ -239,16 +239,18 @@
                     <div class="galeria__overlay">
                         <h3 class="galeria__titulo">Corona Extra</h3>
                     </div>
-                </div>
+                </div>-->
 
                 {{#each posts}}
                 
                 <div class="galeria__moldura galeria__moldura--cerveja">
-                    <img class="galeria__imagem galeria__imagem--cerveja"
-                        src="imgs/{{dataValues.imagemCerveja}}" />
-                    <div class="galeria__overlay">
-                        <h3 class="galeria__titulo">{{dataValues.nomeCerveja}}</h3>
-                    </div>
+                    <a href="">
+                        <img class="galeria__imagem galeria__imagem--cerveja"
+                            src="imgs/{{dataValues.imagemCerveja}}" />
+                        <div class="galeria__overlay">
+                            <h3 class="galeria__titulo">{{dataValues.nomeCerveja}}</h3>
+                        </div>
+                    </a>
                 </div>
                 
                 {{/each}}
