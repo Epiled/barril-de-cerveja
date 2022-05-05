@@ -24,11 +24,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage})
 
-app.use('/css', express.static(__dirname + '/assets/css'))
+app.use('/css', express.static('assets/css'))
 app.use('/js', express.static(__dirname + '/assets/js'))
 app.use('/fonts', express.static(__dirname + '/assets/fonts'))
-app.use('/imgs', express.static(__dirname + '/assets/imgs'))
-app.use('/svgs', express.static(__dirname + '/assets/svgs'))
+app.use('/imgs', express.static('/assets/imgs'))
+app.use('/svgs', express.static('/assets/svgs'))
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
