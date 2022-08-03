@@ -7,22 +7,10 @@ const PostMarcas = require('./models/model-marcas')
 const path = require('path')
 const { dirname } = require('path');
 const { Op, where } = require("sequelize");
-const multer = require("multer");
 const admin = require("./routes/admin")
 
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
-
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "assets/imgs/")
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname)
-  }
-})
-
-const upload = multer({ storage })
 
 app.use('/css', express.static(__dirname + '/assets/css'))
 app.use('/js', express.static(__dirname + '/assets/js'))
@@ -34,28 +22,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 app.use("/admin", admin)
-
-app.post("/nova-pagina", upload.single("imagemCerveja"), function (req, res, next) {
-
-  Post.create({
-    imagemCerveja: req.file.filename,
-    nomeCerveja: req.body.nomeCerveja,
-    tipo: req.body.tipo,
-    teorAlcoolico: req.body.teorAlcoolico,
-    fabricante: req.body.fabricante,
-    slogan: req.body.slogan,
-    origem: req.body.origem,
-    criador: req.body.criador,
-    introduzido: req.body.introduzido,
-    origemNome: req.body.origemNome
-  }).then(function (post) {
-    res.send(post.imagemCerveja + "Post criado com sucesso!")
-  }).catch(function (erro) {
-    res.send("Houve um erro: " + erro)
-  })
-  let teste = req.file.path
-  res.json(teste)
-})
 
 app.get("/", function (req, res) {
 
@@ -82,9 +48,7 @@ app.get("/", function (req, res) {
     const cervejas = posts[0];
     const marcas = posts[1]
     res.render('index', { title: "Barril De Cerveja", cervejas: cervejas, marcas: marcas })
-
   });
-
 })
 
 app.get("/cervejas", function (req, res) {
