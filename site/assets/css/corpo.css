@@ -1,3 +1,7 @@
-.corpo{
-    margin-top: 5rem;
+.corpo {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 5rem;
+  box-sizing: border-box;
 }
