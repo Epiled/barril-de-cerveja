@@ -3,33 +3,22 @@
 <div class="breadcrumb">
   <span>Você esta em:</span>
   <ul class="breadcrumb__lista">
-    <li class="breadcrumb__item"><a
-        class="breadcrumb__link"
-        href="/"
-      >Home</a></li><span>&#10148;</span>
-    <li class="breadcrumb__item"><a
-        class="breadcrumb__link"
-        href="/cervejas"
-      >Cervejas</a></li>
+    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li><span>&#10148;</span>
+    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/cervejas">Cervejas</a></li>
     <span>&#10148;</span>
-    <li class="breadcrumb__item"><a
-        class="breadcrumb__link"
-        href={{dataValues.id}}
-      >{{dataValues.nomeCerveja}}</a></li>
+    <li class="breadcrumb__item"><a class="breadcrumb__link" href={{dataValues.id}}>{{dataValues.nomeCerveja}}</a></li>
   </ul>
 </div>
 
 <section class="conteudo">
   <div class="conteudo__tituloConteiner conteudo__tituloConteiner--cerveja">
-    <h1
-      class="conteudo__titulo conteudo__titulo--alternativo"
-    >{{dataValues.nomeCerveja}}(Cerveja)</h1>
+    <h1 class="conteudo__titulo conteudo__titulo--alternativo">{{dataValues.nomeCerveja}}(Cerveja)</h1>
   </div>
 
   <div class="conteudo__conteiner">
     <section class="conteudo__infos">
       <div class="cerveja__imagem" style="background-image: url(/imgs/{{dataValues.imagemCerveja}});">
-          {{!-- <img src="/imgs/{{dataValues.imagemCerveja}}" alt=""> --}}
+        {{!-- <img src="/imgs/{{dataValues.imagemCerveja}}" alt=""> --}}
       </div>
       <table class="tabela">
         <tbody>
@@ -55,12 +44,8 @@
             <td class="tabela__dado">{{dataValues.criador}}</td>
           </tr>
           <tr class="tabela__linha">
-            <th
-              class="tabela__cabecalho tabela__cabecalho--ultimo"
-            >Introduzida:</th>
-            <td
-              class="tabela__dado tabela__dado--ultimo"
-            >{{dataValues.introduzido}}</td>
+            <th class="tabela__cabecalho tabela__cabecalho--ultimo">Introduzida:</th>
+            <td class="tabela__dado tabela__dado--ultimo">{{dataValues.introduzido}}</td>
           </tr>
         </tbody>
       </table>
