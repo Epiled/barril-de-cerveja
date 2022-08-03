@@ -4,19 +4,40 @@
     margin-bottom: 3rem;
 }
 
+.sobre__conteiner--egipcios{
+    margin-bottom: 3rem;
+}
+
+.sobre__conteiner--ninkasi{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 3rem 0rem;
+    margin-bottom: 3rem;
+}
+
 @media screen and (min-width: 768px) {
     .sobre__conteiner{
         display: block;
         overflow: auto;
+        margin-bottom: 0;
+    }
+    .sobre__conteiner--ninkasi{
+        grid-template-columns: 25rem auto;
+        margin-bottom: 3rem;
+        grid-gap: 3rem;
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1368px) {
     .sobre__conteiner{
         display: grid;
         grid-template-columns: calc(50% - 1.5rem)calc(50% - 1.5rem);
         grid-gap: 3rem;
-        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    .sobre__conteiner--ninkasi{
+        grid-template-columns: calc(50% - 1.5rem) calc(50% - 1.5rem);
     }
 
     .sobre__conteiner--vaso{
@@ -28,5 +49,9 @@
         display: grid;
         grid-template-columns: calc(50% - 1.5rem) calc(50% - 1.5rem);
         grid-gap: 3rem;
+    }
+
+    .sobre__conteiner--caverna {
+        margin-bottom: 0;
     }
 }

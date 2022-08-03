@@ -17,6 +17,8 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: white;
+  width: auto;
+  height: auto;
 }
 
 a:visited{

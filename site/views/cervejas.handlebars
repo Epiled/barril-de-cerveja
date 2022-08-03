@@ -1,101 +1,162 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
+<div class="breadcrumb">
+  <span>Você esta em:</span>
+  <ul class="breadcrumb__lista">
+    <li class="breadcrumb__item"><a
+        class="breadcrumb__link"
+        href="/"
+      >Home</a></li><span>&#10148;</span>
+    <li class="breadcrumb__item"><a
+        class="breadcrumb__link"
+        href="cervejas"
+      >Cervejas</a></li>
+  </ul>
+</div>
 
-<head>
-    <title>Cerveja</title>
+<section class="conteudo">
+  <div class="conteudo__tituloConteiner">
+    <h1 class="conteudo__titulo conteudo__titulo--alternativo">Cervejas</h1>
+    <span class="botao--filtro" data-botaoFiltro>Filtro
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="menu__icone menu__icone--filtro"
+        viewBox="0 0 35 35"
+        xml:space="preserve"
+      >
+        <path
+          d="M20.8 22.5h-6.7c-2.8 0-5 2.2-5 5s2.2 5 5 5h6.7c2.8 0 5-2.2 5-5s-2.2-5-5-5zM17.5 20.8.8 2.5h33.3L17.5 20.8z"
+        ></path>
+      </svg>
+    </span>
+  </div>
+  <div class="filtro filtro--fechado" data-filtro>
+    <div class="filtro__tipoConteiner">
+      <span class="filtro__tipo">Marcas</span>
+      <div class="filtro__itens"> 
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Brahma</label>
+        </div>
 
-    <link rel="stylesheet" href="css/cerveja/cerveja-imagem.css">
-    <link rel="stylesheet" href="css/cerveja/cerveja-origem.css">
-    <link rel="stylesheet" href="css/cerveja/cerveja-texto.css">
+        <div class="filtro__item">
+          <input type="checkbox" name="origemEstadosUnidos" id="origemEstadosUnidos"
+          />
+          <label class="filtro__label" for="origemEstadosUnidos">Bavária</label>
+        </div>
 
-    <link rel="stylesheet" href="css/conteudo/conteudo.css">
-    <link rel="stylesheet" href="css/conteudo/conteudo-conteiner.css">
-    <link rel="stylesheet" href="css/conteudo/conteudo-infos.css">
-    <link rel="stylesheet" href="css/conteudo/conteudo-titulo.css">
-    <link rel="stylesheet" href="css/conteudo/conteudo-titulo-conteiner.css">
+        <div class="filtro__item">
+          <input type="checkbox" name="origemArgentina" id="origemArgentina" />
+          <label class="filtro__label" for="origemArgentina">Corona Extra</label>
+        </div>
 
-    <link rel="stylesheet" href="css/filtro/filtro.css">
-    <link rel="stylesheet" href="css/filtro/filtro-itens.css">
-    <link rel="stylesheet" href="css/filtro/filtro-label.css">
-    <link rel="stylesheet" href="css/filtro/filtro-tipo.css">
-    <link rel="stylesheet" href="css/filtro/filtro-tipo-conteiner.css">
+        <div class="filtro__item">
+          <input type="checkbox" name="origemJapao" id="origemJapao" />
+          <label class="filtro__label" for="origemJapao">Bud Light</label>
+        </div>
 
-    <link rel="stylesheet" href="css/tabela/tabela.css">
-    <link rel="stylesheet" href="css/tabela/tabela-cabecalho.css">
-    <link rel="stylesheet" href="css/tabela/tabela-dado.css">
-    <link rel="stylesheet" href="css/tabela/tabela-linha.css">
-</head>
+        <div class="filtro__item">
+          <input type="checkbox" name="origemCanada" id="origemCanada" />
+          <label class="filtro__label" for="origemCanada">Budweiser</label>
+        </div>
 
-<body class="fonte">
-    <div class="breadcrumb">
-        <span>Você esta em:</span>
-        <ul class="breadcrumb__lista">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li><span>&#10148;</span>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="cervejas">Cervejas</a></li>
-            <span>&#10148;</span>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="">Bhrama</a></li>
-        </ul>
+        <div class="filtro__item">
+          <input type="checkbox" name="origemFranca" id="origemFranca" />
+          <label class="filtro__label" for="origemFranca">Bohemia</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemItalia" id="origemItalia" />
+          <label class="filtro__label" for="origemItalia">Heineken</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemPortugal" id="origemPortugal" />
+          <label class="filtro__label" for="origemPortugal">Crystal</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemAustralia" id="origemAustralia" />
+          <label class="filtro__label" for="origemAustralia">Skol</label>
+        </div>
+      </div>
     </div>
 
-    <section class="conteudo">
-        <div class="conteudo__tituloConteiner conteudo__tituloConteiner--cerveja">
-            <h1 class="conteudo__titulo conteudo__titulo--alternativo">{{nomeCerveja}}Bhrama(Cerveja)</h1>
+    <div class="filtro__tipoConteiner">
+      <span class="filtro__tipo">Estilos de Cerveja</span>
+      <div class="filtro__itens">
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Bock</label>
         </div>
 
-        <div class="conteudo__conteiner">
-            <section class="conteudo__infos">
-                <div class="cerveja__imagem">
-                </div>
-                <table class="tabela">
-                    <tbody>
-                        <tr class="tabela__linha">
-                            <th class="tabela__cabecalho">Tipo:</th>
-                            <td class="tabela__dado">{{dataValues.tipo}}Cerveja</td>
-                        </tr>
-                        <tr class="tabela__linha">
-                            <th class="tabela__cabecalho">Teor Alcoólico:</th>
-                            <td class="tabela__dado">{{dataValues.teorAlcoolico}}4,8%</td>
-                        </tr>
-                        <tr class="tabela__linha">
-                            <th class="tabela__cabecalho">Slogan:</th>
-                            <td class="tabela__dado">{{dataValues.slogan}}Brahma, o sabor de ser mais</td>
-                        </tr>
-                        <tr class="tabela__linha">
-                            <th class="tabela__cabecalho">Origem:</th>
-                            <td class="tabela__dado">{{dataValues.origem}}Rio de Janeiro, no Rio de Janeiro, no Brasil
-                            </td>
-                        </tr>
-                        <tr class="tabela__linha">
-                            <th class="tabela__cabecalho">Criador:</th>
-                            <td class="tabela__dado">{{dataValues.criador}}Joseph Villiger</td>
-                        </tr>
-                        <tr class="tabela__linha">
-                            <th class="tabela__cabecalho tabela__cabecalho--ultimo">Introduzida:</th>
-                            <td class="tabela__dado tabela__dado--ultimo">{{dataValues.introduzido}}1888</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section class="cerveja__origem">
-                <h1 class="conteudo__titulo conteudo__titulo--cervejaAlternativo">Origem Do Nome</h1>
-
-                <p class="cerveja__texto">Não há nenhuma comprovação da origem do nome, mas há três hipóteses para a
-                    origem do nome.</p>
-
-                <p class="cerveja__texto">A primeira seria uma homenagem dos criadores da cervejaria ao deus Brama, da
-                    religião Hindu, que também
-                    pode ser escrito como Brahma como a cerveja.</p>
-
-                <p class="cerveja__texto">A segunda seria uma homenagem ao compositor alemão Johannes Brahms.</p>
-
-                <p class="cerveja__texto">A terceira seria uma homenagem ao britânico Joseph Bramah, inventor da válvula
-                    manual para tirar chope em
-                    balcões de bares. Como Bramah fundou uma empresa com seu sobrenome, os cervejeiros brasileiros não
-                    poderiam usar este, e tiveram de mudar as letras de lugar para dar origem ao nome da cerveja.</p>
-            </section>
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Pilsen</label>
         </div>
-    </section>
-</body>
 
-</html>
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Fruit Beer</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Munich Helles</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Rauchbier</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Vienna Lager</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Bock</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Imperil IPA</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Fruit Beer</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="filtro__tipoConteiner">
+      <span class="filtro__tipo">Ordem</span>
+      <div class="filtro__itens filtro__itens--orderm">
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Ordem alfabetica</label>
+        </div>
+
+        <div class="filtro__item">
+          <input type="checkbox" name="origemBrasil" id="origemBrasil" />
+          <label class="filtro__label" for="origemBrasil">Data</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="galeria galeria--alternativa">
+    {{#each posts}}
+      <div class="galeria__moldura galeria__moldura--alternativa">
+        <a href="">
+          <img class="galeria__imagem galeria__imagem--cerveja" src="/imgs/{{dataValues.imagemCerveja}}" alt="" />
+          <div class="galeria__overlay">
+            <h3 class="galeria__titulo">{{dataValues.nomeCerveja}}</h3>
+          </div>
+        </a>
+      </div>
+    {{/each}}
+  </div>
+  <button class="botao" type="button" name="button">Todas as cervejas</button>
+</section>

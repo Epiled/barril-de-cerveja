@@ -1,7 +1,9 @@
 .botao{
+  align-items: center;
   background: var(--cor-principal);
   border: .3rem solid var(--cor-complementar);
   border-radius: .5rem;
+  display: flex;
   color: white;
   font-family: Mukta;
   font-size: 2rem;
@@ -34,4 +36,35 @@
   display: flex;
   align-items: center;
   height: 5rem;
+}
+
+.botao--pesquisa {
+  background-color: var(--cor-complementar);
+  border-left: 0;
+  border-radius: 0 0 1rem 0;
+  height: auto;
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+.botao--deskPesquisa {
+  display: none;
+}
+
+@media screen and (min-width: 1368px){
+  .botao--pesquisa {
+    display: none;
+  }
+
+  .botao--deskPesquisa {
+    background: none;
+    border: 0;
+    display: flex;
+    height: auto;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: auto;
+  }
 }

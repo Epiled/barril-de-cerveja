@@ -1,5 +1,4 @@
-<body class="fonte">
-    <section class="banner">
+<section class="banner">
         <img src="imgs/cerveja-da-semana.jpg" class="banner__imagem" />
         <div class="banner__conteiner">
             <div class="banner__semana">
@@ -10,15 +9,15 @@
                 <p>Introdução - is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
-    </section>
+</section>
 
-    <section class="conteudos">
+<section class="conteudos">
         <section class="conteudo conteudo--cerveja">
             <h2 class="conteudo__titulo conteudo__titulo--cerveja">Conheça algumas cerveja!</h2>
             <div class="galeria">
                 {{#each posts}}
                 <div class="galeria__moldura galeria__moldura--cerveja">
-                    <a href="">
+                    <a href="/cervejas/{{dataValues.id}}">
                         <img class="galeria__imagem galeria__imagem--cerveja"
                             src="imgs/{{dataValues.imagemCerveja}}" />
                         <div class="galeria__overlay">
@@ -29,7 +28,7 @@
                 {{/each}}
             </div>
 
-            <button class="botao" type="button" name="button">Lista de cerveja</button>
+            <a class="botao" href="/cervejas">Lista de cervejas</a>
         </section>
 
         <section class="conteudo">
@@ -60,6 +59,6 @@
                     </div>
                 </div>
             </div>
-            <button class="botao" type="button" name="button">Todas as marcas</button>
+            <a class="botao" href="/marcas">Todas as marcas</a>
         </section>
-    </section>
+</section>

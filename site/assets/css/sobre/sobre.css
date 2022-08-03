@@ -1,10 +1,10 @@
 .sobre{
-    font-size: 1.5rem;
     color: var(--cor-texto-alternativa);
     line-height: 2.5rem;
+    font-size: 1.5rem;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1368px) {
     .sobre{
         font-size: 1.9rem;
         line-height: 3.1rem;

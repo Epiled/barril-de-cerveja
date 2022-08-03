@@ -1,8 +1,23 @@
-.sobre__paragrafo {
+.sobre__paragrafo{
     margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 1366px) {
+.sobre__paragrafo--ninkasi{
+    margin-bottom: 0;
+}
+
+.sobre__paragrafo--vaso{
+    margin-bottom: 0;
+    order: 2;
+}
+
+@media screen and (min-width: 768px){
+    .sobre__paragrafo--vaso{
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1368px) {
     .sobre__paragrafo{
         margin: 0;
     }
@@ -10,5 +25,9 @@
     .sobre__paragrafo--caverna{
         grid-column: 1;
         grid-row: 1;
+    }
+
+    .sobre__paragrafo--vaso{
+        margin-bottom: 3rem;
     }
 }

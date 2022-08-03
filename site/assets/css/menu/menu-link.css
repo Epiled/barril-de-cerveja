@@ -1,0 +1,17 @@
+.menu__link {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.menu__link--logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+@media screen and (min-width: 1368px){
+    .menu__link {
+        width: auto;
+    }
+}

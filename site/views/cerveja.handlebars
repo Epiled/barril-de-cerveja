@@ -1,0 +1,92 @@
+{{#each posts}}
+
+<div class="breadcrumb">
+  <span>Você esta em:</span>
+  <ul class="breadcrumb__lista">
+    <li class="breadcrumb__item"><a
+        class="breadcrumb__link"
+        href="/"
+      >Home</a></li><span>&#10148;</span>
+    <li class="breadcrumb__item"><a
+        class="breadcrumb__link"
+        href="/cervejas"
+      >Cervejas</a></li>
+    <span>&#10148;</span>
+    <li class="breadcrumb__item"><a
+        class="breadcrumb__link"
+        href={{dataValues.id}}
+      >{{dataValues.nomeCerveja}}</a></li>
+  </ul>
+</div>
+
+<section class="conteudo">
+  <div class="conteudo__tituloConteiner conteudo__tituloConteiner--cerveja">
+    <h1
+      class="conteudo__titulo conteudo__titulo--alternativo"
+    >{{dataValues.nomeCerveja}}(Cerveja)</h1>
+  </div>
+
+  <div class="conteudo__conteiner">
+    <section class="conteudo__infos">
+      <div class="cerveja__imagem" style="background-image: url(/imgs/{{dataValues.imagemCerveja}});">
+          {{!-- <img src="/imgs/{{dataValues.imagemCerveja}}" alt=""> --}}
+      </div>
+      <table class="tabela">
+        <tbody>
+
+          <tr class="tabela__linha">
+            <th class="tabela__cabecalho">Tipo:</th>
+            <td class="tabela__dado">{{dataValues.tipo}}</td>
+          </tr>
+          <tr class="tabela__linha">
+            <th class="tabela__cabecalho">Teor Alcoólico:</th>
+            <td class="tabela__dado">{{dataValues.teorAlcoolico}}</td>
+          </tr>
+          <tr class="tabela__linha">
+            <th class="tabela__cabecalho">Slogan:</th>
+            <td class="tabela__dado">{{dataValues.slogan}}</td>
+          </tr>
+          <tr class="tabela__linha">
+            <th class="tabela__cabecalho">Origem:</th>
+            <td class="tabela__dado">{{dataValues.origem}}</td>
+          </tr>
+          <tr class="tabela__linha">
+            <th class="tabela__cabecalho">Criador:</th>
+            <td class="tabela__dado">{{dataValues.criador}}</td>
+          </tr>
+          <tr class="tabela__linha">
+            <th
+              class="tabela__cabecalho tabela__cabecalho--ultimo"
+            >Introduzida:</th>
+            <td
+              class="tabela__dado tabela__dado--ultimo"
+            >{{dataValues.introduzido}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="cerveja__origem">
+      <h1 class="conteudo__titulo conteudo__titulo--cervejaAlternativo">Origem
+        Do Nome</h1>
+
+      <p class="cerveja__texto">Não há nenhuma comprovação da origem do nome,
+        mas há três hipóteses para a origem do nome.</p>
+
+      <p class="cerveja__texto">A primeira seria uma homenagem dos criadores da
+        cervejaria ao deus Brama, da religião Hindu, que também pode ser escrito
+        como Brahma como a cerveja.</p>
+
+      <p class="cerveja__texto">A segunda seria uma homenagem ao compositor
+        alemão Johannes Brahms.</p>
+
+      <p class="cerveja__texto">A terceira seria uma homenagem ao britânico
+        Joseph Bramah, inventor da válvula manual para tirar chope em balcões de
+        bares. Como Bramah fundou uma empresa com seu sobrenome, os cervejeiros
+        brasileiros não poderiam usar este, e tiveram de mudar as letras de
+        lugar para dar origem ao nome da cerveja.</p>
+    </section>
+  </div>
+</section>
+
+{{/each}}

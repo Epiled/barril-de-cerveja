@@ -1,3 +1,17 @@
 .sobre__conteudo{
     padding: 3rem;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre__conteudo{
+        max-width: 76.8rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1368px) {
+    .sobre__conteudo{
+        max-width: 136.8rem;
+    }
 }

@@ -1,21 +1,22 @@
 const express = require('express');
 const router = express.Router();
+const Post = require('../models/model-cerveja');
 
 router.get('/', (req, res) => {
-    res.render('admin/login')
+    res.render('admin/login', {layout: 'simple.handlebars'})
 })
 
 router.get('/login', (req, res) => {
-    res.render('login');
+    res.render('admin/login', {layout: 'simple.handlebars'});
 })
 
 router.get('/nova-pagina', (req, res) => {
-    res.render('nova-pagina');
+    res.render('admin/nova-pagina', {layout: 'simple.handlebars'});
 })
 
 router.get('/paginas', (req, res) => {
     Post.findAll().then(function(posts){
-        res.render('paginas', {posts: posts})
+        res.render('admin/paginas', {posts: posts})
     })
 })
 

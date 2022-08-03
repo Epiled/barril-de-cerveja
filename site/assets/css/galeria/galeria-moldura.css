@@ -1,4 +1,5 @@
 .galeria__moldura{
+  box-sizing: border-box;
   width: 50%;
   height: calc(50vw + 5rem);
   position: relative;
@@ -7,9 +8,8 @@
 @media screen and (min-width: 768px) {
   .galeria__moldura{
     border: .3rem solid var(--cor-principal);
-    width: calc(25% - 2rem);
+    width: calc(25% - 1rem);
     height: calc(25vw - 2rem);
-    margin-right: 1rem;
   }
 
   .galeria__moldura--alternativa{
@@ -19,16 +19,16 @@
     margin: 0;
   }
 
-  .galeria__moldura:last-child{
-    margin-right: 0;
-  }
-
   .galeria__moldura--cerveja{
     border-color: white;
   }
 }
 
 @media screen and (min-width: 1368px){
+  .galeria__moldura {
+    width: calc(25% - 3rem);
+  }
+
   .galeria__moldura--alternativa{
     height: calc(100vw / 5);
     width: 20%;
