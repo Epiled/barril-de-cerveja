@@ -1,64 +1,46 @@
 <section class="banner">
-        <img src="imgs/cerveja-da-semana.jpg" class="banner__imagem" />
-        <div class="banner__conteiner">
-            <div class="banner__semana">
-                <h1 class="banner__titulo">Titulo Da Semana</h1>
-            </div>
-            <div class="banner__conteudo">
-                <h2 class="banner__tema">Tema</h2>
-                <p>Introdução - is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-        </div>
+  <img src="imgs/cerveja-da-semana.jpg" class="banner__imagem" />
+  <div class="banner__conteiner">
+    <div class="banner__semana">
+      <h1 class="banner__titulo">Titulo Da Semana</h1>
+    </div>
+    <div class="banner__conteudo">
+      <h2 class="banner__tema">Tema</h2>
+      <p>Introdução - is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+  </div>
 </section>
 
 <section class="conteudos">
-        <section class="conteudo conteudo--cerveja">
-            <h2 class="conteudo__titulo conteudo__titulo--cerveja">Conheça algumas cerveja!</h2>
-            <div class="galeria">
-                {{#each posts}}
-                <div class="galeria__moldura galeria__moldura--cerveja">
-                    <a href="/cervejas/{{dataValues.id}}">
-                        <img class="galeria__imagem galeria__imagem--cerveja"
-                            src="imgs/{{dataValues.imagemCerveja}}" />
-                        <div class="galeria__overlay">
-                            <h3 class="galeria__titulo">{{dataValues.nomeCerveja}}</h3>
-                        </div>
-                    </a>
-                </div>
-                {{/each}}
-            </div>
+  <section class="conteudo conteudo--cerveja">
+    <h2 class="conteudo__titulo conteudo__titulo--cerveja">Conheça algumas cerveja!</h2>
+    <div class="galeria">
+      {{#each cervejas}}
+      <div class="galeria__moldura galeria__moldura--cerveja">
+        <a href="/cervejas/{{dataValues.id}}">
+          <img class="galeria__imagem galeria__imagem--cerveja" src="imgs/{{dataValues.imagemCerveja}}" />
+          <div class="galeria__overlay">
+            <h3 class="galeria__titulo">{{dataValues.nomeCerveja}}</h3>
+          </div>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+    <a class="botao" href="/cervejas">Lista de cervejas</a>
+  </section>
 
-            <a class="botao" href="/cervejas">Lista de cervejas</a>
-        </section>
-
-        <section class="conteudo">
-            <h2 class="conteudo__titulo">Qual marca você quer conhecer?</h2>
-            <div class="galeria">
-                <div class="galeria__moldura">
-                    <img class="galeria__imagem" src="imgs/logo-skol.png" />
-                    <div class="galeria__overlay">
-                        <h3 class="galeria__titulo">Skol</h3>
-                    </div>
-                </div>
-                <div class="galeria__moldura">
-                    <img class="galeria__imagem" src="imgs/logo-brahma.png" />
-                    <div class="galeria__overlay">
-                        <h3 class="galeria__titulo">Brahma</h3>
-                    </div>
-                </div>
-                <div class="galeria__moldura">
-                    <img class="galeria__imagem" src="imgs/logo-budweiser.png" />
-                    <div class="galeria__overlay">
-                        <h3 class="galeria__titulo">Budweiser</h3>
-                    </div>
-                </div>
-                <div class="galeria__moldura">
-                    <img class="galeria__imagem" src="imgs/logo-corona-extra.png" />
-                    <div class="galeria__overlay">
-                        <h3 class="galeria__titulo">Corona Extra</h3>
-                    </div>
-                </div>
-            </div>
-            <a class="botao" href="/marcas">Todas as marcas</a>
-        </section>
+  <section class="conteudo">
+    <h2 class="conteudo__titulo">Qual marca você quer conhecer?</h2>
+    <div class="galeria">
+      {{#each marcas}}
+      <div class="galeria__moldura">
+        <img class="galeria__imagem" src="imgs/{{dataValues.imagemMarca}}" />
+        <div class="galeria__overlay">
+          <h3 class="galeria__titulo">{{dataValues.nomeMarca}}</h3>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <a class="botao" href="/marcas">Todas as marcas</a>
+  </section>
 </section>
