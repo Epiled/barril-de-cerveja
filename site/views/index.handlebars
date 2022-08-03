@@ -34,10 +34,12 @@
     <div class="galeria">
       {{#each marcas}}
       <div class="galeria__moldura">
+        <a href="/marcas/{{dataValues.id}}">
         <img class="galeria__imagem" src="imgs/{{dataValues.imagemMarca}}" />
         <div class="galeria__overlay">
           <h3 class="galeria__titulo">{{dataValues.nomeMarca}}</h3>
         </div>
+        </a>
       </div>
       {{/each}}
     </div>
