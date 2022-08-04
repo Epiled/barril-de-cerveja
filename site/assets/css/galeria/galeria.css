@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.galeria--esconder {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .galeria{
     padding: 0 2.5rem;
