@@ -1,16 +1,9 @@
 let galeria = document.querySelector('.galeria');
 let posts = galeria.querySelectorAll('.galeria__moldura')
-
 let opcoesFiltro = document.querySelectorAll('[data-filtro-marca]')
-
-posts.forEach(post => {
-  // console.log(post);
-});
-
 let filtrados = [];
 
 opcoesFiltro.forEach(opcao => {
-
   opcao.addEventListener('change', function (e) {
     for (let i = 0; i < posts.length; i++) {
       let post = posts[i]
@@ -30,15 +23,12 @@ opcoesFiltro.forEach(opcao => {
         }
       }
     }
+
+    if(filtrados.length <= 0) {
+      for (let i = 0; i < posts.length; i++) {
+        let post = posts[i]
+        post.classList.remove('galeria--esconder');
+      }
+    }
   })
-
-
-})
-
-
-// else {
-    //   for (let i = 0; i < posts.length; i++) {
-    //     let post = posts[i]
-    //     post.classList.remove('galeria--esconder');
-    //   }
-    // }
+});
