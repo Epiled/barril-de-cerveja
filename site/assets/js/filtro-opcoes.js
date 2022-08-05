@@ -5,12 +5,22 @@ let filtrados = [];
 
 opcoesFiltro.forEach(opcao => {
   opcao.addEventListener('change', function (e) {
+
     for (let i = 0; i < posts.length; i++) {
       let post = posts[i]
+      let expressao = new RegExp(this.value, 'i');
 
-      if (e.target.checked && (post.getAttribute('data-marca') == this.value)) {
+      if (e.target.checked && expressao.test(post.getAttribute('data-marca'))) {
         filtrados.push(post);
-      } else if (!e.target.checked && (post.getAttribute('data-marca') == this.value)) {
+
+        console.group;
+        console.log(expressao);
+        console.log(expressao.test(post.getAttribute('data-marca')));
+        console.log(post.getAttribute('data-marca'));
+        console.log(this.value);
+        console.groupEnd;
+
+      } else if (!e.target.checked && expressao.test(post.getAttribute('data-marca'))) {
         filtrados.splice(filtrados.indexOf(post), 1);
         post.classList.add('galeria--esconder');
       }
@@ -24,7 +34,7 @@ opcoesFiltro.forEach(opcao => {
       }
     }
 
-    if(filtrados.length <= 0) {
+    if (filtrados.length <= 0) {
       for (let i = 0; i < posts.length; i++) {
         let post = posts[i]
         post.classList.remove('galeria--esconder');
