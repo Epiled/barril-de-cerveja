@@ -1,21 +1,17 @@
-const Sequelize = require('sequelize')
-const sequelize = new Sequelize('barril-cerveja', 'root', 'admin', {
-    host: 'localhost',
-    dialect: 'mysql'
-})
+const db = require("../controllers/conexao-db");
 
-const Marcas = sequelize.define('marcas', {
+const Marcas = db.sequelize.define('marcas', {
     imagemMarca: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
     nomeMarca: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },  
 })
 
 module.exports = {
-    Sequelize: Sequelize,
-    sequelize: sequelize,
+    Sequelize: db.Sequelize,
+    sequelize: db.sequelize,
 }
 
 //Marcas.sync({force:true})

@@ -1,45 +1,41 @@
-const Sequelize = require('sequelize')
-const sequelize = new Sequelize('barril-cerveja', 'root', 'admin', {
-    host: 'localhost',
-    dialect: 'mysql'
-})
+const db = require("../controllers/conexao-db");
 
-const Cervejas = sequelize.define('cervejas', {
+const Cervejas = db.sequelize.define('cervejas', {
     imagemCerveja: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
     nomeCerveja: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
     tipo: {
-        type: Sequelize.TEXT
+        type: db.Sequelize.TEXT
     },
     teorAlcoolico: {
-        type: Sequelize.TEXT
+        type: db.Sequelize.TEXT
     },
     fabricante: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
     slogan: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
     origem: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
     criador: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
     introduzido: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
     origemNome: {
-        type: Sequelize.STRING
+        type: db.Sequelize.STRING
     },
 })
 
 module.exports = {
-    Sequelize: Sequelize,
-    sequelize: sequelize,
+    Sequelize: db.Sequelize,
+    sequelize: db.sequelize,
 }
 
 //Cervejas.sync({force:true})
