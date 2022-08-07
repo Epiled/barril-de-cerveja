@@ -1,4 +1,5 @@
 .filtro__label{
     color: var(--cor-texto-alternativa);
     font-size: 2rem;
+    text-transform: capitalize;
 }
