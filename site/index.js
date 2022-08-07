@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
-const handlebars = require('express-handlebars')
-const bodyParser = require('body-parser')
+const handlebars = require('express-handlebars');
+const bodyParser = require('body-parser');
 const Post = require('./models/model-cerveja');
-const PostMarcas = require('./models/model-marcas')
-const path = require('path')
+const PostMarcas = require('./models/model-marcas');
+const Filtros = require('./models/model-filtro');
+const path = require('path');
 const { dirname } = require('path');
 const { Op, where } = require("sequelize");
-const admin = require("./routes/admin")
+const admin = require("./routes/admin");
 
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
@@ -24,36 +25,41 @@ app.use(express.json())
 app.use("/admin", admin)
 
 app.get("/", function (req, res) {
-
-  const promesa = Promise.all([Post.findAll({
-    where: {
-      [Op.or]: [
-        { id: 1 },
-        { id: 2 },
-        { id: 3 },
-        { id: 4 },
-      ]
-    }
-  }), PostMarcas.findAll({
-    where: {
-      [Op.or]: [
-        { id: 1 },
-        { id: 2 },
-        { id: 3 },
-        { id: 4 },
-      ]
-    }
-  })]).then(function(posts){
-    //console.log(posts[0], posts[1])
-    const cervejas = posts[0];
-    const marcas = posts[1]
-    res.render('index', { title: "Barril De Cerveja", cervejas: cervejas, marcas: marcas })
-  });
+  const promesa = Promise.all([
+    Post.findAll({
+      where: {
+        [Op.or]: [
+          { id: 1 },
+          { id: 2 },
+          { id: 3 },
+          { id: 4 },
+        ]
+      }
+    }), PostMarcas.findAll({
+      where: {
+        [Op.or]: [
+          { id: 1 },
+          { id: 2 },
+          { id: 3 },
+          { id: 4 },
+        ]
+      }
+    })]).then(function (posts) {
+      //console.log(posts[0], posts[1])
+      const cervejas = posts[0];
+      const marcas = posts[1]
+      res.render('index', { title: "Barril De Cerveja", cervejas: cervejas, marcas: marcas })
+    });
 })
 
 app.get("/cervejas", function (req, res) {
-  Post.findAll().then(function (posts) {
-    res.render('cervejas', { layout: 'list-pags.handlebars', title: "Cervejas", posts: posts })
+  const promesa = Promise.all([
+    Filtros.findAll(),
+    Post.findAll()
+  ]).then(function (posts) {
+    const filtros = posts[0]
+    const cervejas = posts[1];
+    res.render('cervejas', { layout: 'list-pags.handlebars', title: "Cervejas", filtros: filtros, cervejas: cervejas })
   })
 })
 

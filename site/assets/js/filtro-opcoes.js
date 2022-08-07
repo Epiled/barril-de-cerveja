@@ -13,13 +13,6 @@ opcoesFiltro.forEach(opcao => {
       if (e.target.checked && expressao.test(post.getAttribute('data-marca'))) {
         filtrados.push(post);
 
-        console.group;
-        console.log(expressao);
-        console.log(expressao.test(post.getAttribute('data-marca')));
-        console.log(post.getAttribute('data-marca'));
-        console.log(this.value);
-        console.groupEnd;
-
       } else if (!e.target.checked && expressao.test(post.getAttribute('data-marca'))) {
         filtrados.splice(filtrados.indexOf(post), 1);
         post.classList.add('galeria--esconder');
