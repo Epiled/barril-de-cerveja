@@ -1,14 +1,8 @@
 <div class="breadcrumb">
   <span>Você esta em:</span>
   <ul class="breadcrumb__lista">
-    <li class="breadcrumb__item"><a
-        class="breadcrumb__link"
-        href="/"
-      >Home</a></li><span>&#10148;</span>
-    <li class="breadcrumb__item"><a
-        class="breadcrumb__link"
-        href="/cervejas"
-      >Cervejas</a></li>
+    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li><span>&#10148;</span>
+    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/cervejas">Cervejas</a></li>
   </ul>
 </div>
 
@@ -16,106 +10,38 @@
   <div class="conteudo__tituloConteiner">
     <h1 class="conteudo__titulo conteudo__titulo--alternativo">Cervejas</h1>
     <span class="botao--filtro" data-botaoFiltro>Filtro
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="menu__icone menu__icone--filtro"
-        viewBox="0 0 35 35"
-        xml:space="preserve"
-      >
-        <path
-          d="M20.8 22.5h-6.7c-2.8 0-5 2.2-5 5s2.2 5 5 5h6.7c2.8 0 5-2.2 5-5s-2.2-5-5-5zM17.5 20.8.8 2.5h33.3L17.5 20.8z"
-        ></path>
+      <svg xmlns="http://www.w3.org/2000/svg" class="menu__icone menu__icone--filtro" viewBox="0 0 35 35" xml:space="preserve">
+        <path d="M20.8 22.5h-6.7c-2.8 0-5 2.2-5 5s2.2 5 5 5h6.7c2.8 0 5-2.2 5-5s-2.2-5-5-5zM17.5 20.8.8 2.5h33.3L17.5 20.8z"></path>
       </svg>
     </span>
   </div>
   <div class="filtro filtro--fechado" data-filtro>
+
     <div class="filtro__tipoConteiner">
       <span class="filtro__tipo">Marcas</span>
-      <div class="filtro__itens"> 
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaBrahma" id="marcaBrahma" value="Brahma" data-filtro-marca />
-          <label class="filtro__label" for="marcaBrahma">Brahma</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaBavaria" id="marcaBavaria" value="Bavária" data-filtro-marca />
-          <label class="filtro__label" for="marcaBavaria">Bavária</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaCoronaExtra" id="marcaCoronaExtra" value="Corona Extra" data-filtro-marca />
-          <label class="filtro__label" for="marcaCoronaExtra">Corona Extra</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaBudLight" id="marcaBudLight" value="Bud Light" data-filtro-marca />
-          <label class="filtro__label" for="marcaBudLight">Bud Light</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaBudwiser" id="marcaBudwiser" value="Budweiser" data-filtro-marca />
-          <label class="filtro__label" for="marcaBudwiser">Budweiser</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaBohemia" id="marcaBohemia" value="Bohemia" data-filtro-marca />
-          <label class="filtro__label" for="marcaBohemia">Bohemia</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaHeineken" id="marcaHeineken" value="Heineken" data-filtro-marca />
-          <label class="filtro__label" for="marcaHeineken">Heineken</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaCrystal" id="marcaCrystal" value="Crystal" data-filtro-marca />
-          <label class="filtro__label" for="marcaCrystal">Crystal</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="marcaSkol" id="marcaSkol" value="Skol" data-filtro-marca />
-          <label class="filtro__label" for="marcaSkol">Skol</label>
-        </div>
+      <div class="filtro__itens">
+        {{#each filtros}}
+          {{#ifTipo dataValues.tipo 'marca'}}
+          <div class="filtro__item">
+            <input type="checkbox" name="marca{{dataValues.filtro}}" id="marca{{dataValues.filtro}}" value="{{dataValues.filtro}}" data-filtro-marca />
+            <label class="filtro__label" for="marca{{dataValues.filtro}}">{{dataValues.filtro}}</label>
+          </div>
+          {{/ifTipo}}
+        {{/each}}
       </div>
     </div>
 
     <div class="filtro__tipoConteiner">
-      <span class="filtro__tipo">Estilos de Cerveja</span>
+      <span class="filtro__tipo">Estilos de Cervejas</span>
       <div class="filtro__itens">
-        <div class="filtro__item">
-          <input type="checkbox" name="estiloBock" id="estiloBock" />
-          <label class="filtro__label" for="estiloBock">Bock</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="estiloPilsen" id="estiloPilsen" />
-          <label class="filtro__label" for="estiloPilsen">Pilsen</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="estiloFruitBeer" id="estiloFruitBeer" />
-          <label class="filtro__label" for="estiloFruitBeer">Fruit Beer</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="estiloMunichHelles" id="estiloMunichHelles" />
-          <label class="filtro__label" for="estiloMunichHelles">Munich Helles</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="estiloRauchbier" id="estiloRauchbier" />
-          <label class="filtro__label" for="estiloRauchbier">Rauchbier</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="estiloViennaLager" id="estiloViennaLager" />
-          <label class="filtro__label" for="estiloViennaLager">Vienna Lager</label>
-        </div>
-
-        <div class="filtro__item">
-          <input type="checkbox" name="estiloImperilIPA" id="estiloImperilIPA" />
-          <label class="filtro__label" for="estiloImperilIPA">Imperil IPA</label>
-        </div>
+        {{#each filtros}}
+          {{#ifTipo dataValues.tipo 'estilo de cerveja'}}
+          <div class="filtro__item">
+            <input type="checkbox" name="marca{{dataValues.filtro}}" id="marca{{dataValues.filtro}}" value="{{dataValues.filtro}}" data-filtro-marca />
+            <label class="filtro__label" for="marca{{dataValues.filtro}}">{{dataValues.filtro}}</label>
+          </div>
+          {{/ifTipo}}
+        {{/each}}
       </div>
     </div>
 
@@ -133,18 +59,19 @@
         </div>
       </div>
     </div>
+    
   </div>
 
   <div class="galeria galeria--alternativa">
-    {{#each posts}}
-      <div class="galeria__moldura galeria__moldura--alternativa" data-marca="{{dataValues.nomeCerveja}}">
-        <a class="galeria__link" href="/cervejas/{{dataValues.id}}">
-          <img class="galeria__imagem galeria__imagem--cerveja" src="/imgs/{{dataValues.imagemCerveja}}" alt="" />
-          <div class="galeria__overlay">
-            <h3 class="galeria__titulo">{{dataValues.nomeCerveja}}</h3>
-          </div>
-        </a>
-      </div>
+    {{#each cervejas}}
+    <div class="galeria__moldura galeria__moldura--alternativa" data-marca="{{dataValues.nomeCerveja}}">
+      <a class="galeria__link" href="/cervejas/{{dataValues.id}}">
+        <img class="galeria__imagem galeria__imagem--cerveja" src="/imgs/{{dataValues.imagemCerveja}}" alt="" />
+        <div class="galeria__overlay">
+          <h3 class="galeria__titulo">{{dataValues.nomeCerveja}}</h3>
+        </div>
+      </a>
+    </div>
     {{/each}}
   </div>
 </section>

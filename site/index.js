@@ -10,7 +10,15 @@ const { dirname } = require('path');
 const { Op, where } = require("sequelize");
 const admin = require("./routes/admin");
 
-app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
+app.engine('handlebars', handlebars({
+  defaultLayout: 'main',
+  helpers: {
+    ifTipo: function (arg1, arg2, options) {
+      return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+    },
+  }
+
+}))
 app.set('view engine', 'handlebars')
 
 app.use('/css', express.static(__dirname + '/assets/css'))
@@ -45,7 +53,6 @@ app.get("/", function (req, res) {
         ]
       }
     })]).then(function (posts) {
-      //console.log(posts[0], posts[1])
       const cervejas = posts[0];
       const marcas = posts[1]
       res.render('index', { title: "Barril De Cerveja", cervejas: cervejas, marcas: marcas })
@@ -54,11 +61,16 @@ app.get("/", function (req, res) {
 
 app.get("/cervejas", function (req, res) {
   const promesa = Promise.all([
-    Filtros.findAll(),
+    Filtros.findAll({
+      where: {
+        [Op.not]: [{ tipo: "origem" },]
+      }
+    }),
     Post.findAll()
   ]).then(function (posts) {
-    const filtros = posts[0]
+    const filtros = posts[0];
     const cervejas = posts[1];
+    console.log(filtros);
     res.render('cervejas', { layout: 'list-pags.handlebars', title: "Cervejas", filtros: filtros, cervejas: cervejas })
   })
 })
