@@ -1,59 +1,98 @@
-<img alt="Banner Barril de Cerveja" title="Banner Barril de Cerveja" src="./assets/banner-barril-de-cerveja.png" />
+<!-- ![Social Preview](./src/assets/banner-yellow-batery.png) -->
 
-<h1 align="center">🟠 🍺 Barril de Cerveja 🍺 🟠</h1>
+<h1 align="center"> 🟠 🍺 Barril de Cerveja 🍺 🟠 </h1>
 
-<p id="objetivo">Site Barril de cerveja, criando com HTML5, CSS3, JS, Node.Js, Handlebars e MySQL, usando a técnica de mobile-first, 
-  o site é responsivel e também possui um dashbord para atualizar as páginas de cervejas e marcas, sistema de login e criação de novas páginas</p>
+![Vercel Deploy](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)
+![GitHub release](https://img.shields.io/github/v/release/Epiled/barril-de-cerveja?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/Epiled/barril-de-cerveja?style=for-the-badge)
 
-![Badge](https://img.shields.io/github/last-commit/Epiled/barril-de-cerveja?style=for-the-badge)
-![Badge](https://img.shields.io/github/languages/code-size/Epiled/barril-de-cerveja?style=for-the-badge)
-![Badge](https://img.shields.io/github/languages/count/Epiled/barril-de-cerveja?style=for-the-badge)
-![Bagde](https://img.shields.io/badge/repo%20status-WIP-yellow?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Epiled/barril-de-cerveja?style=for-the-badge)
+![Code Size](https://img.shields.io/github/languages/code-size/Epiled/barril-de-cerveja?style=for-the-badge)
 
-![Badge](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Badge](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Badge](https://img.shields.io/badge/-JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Badge](https://img.shields.io/badge/-Node.js-689F63?style=for-the-badge&logo=node.js&logoColor=white)
-![Badge](https://img.shields.io/badge/-Handlebars.js-F0772B?style=for-the-badge&logo=handlebars.js&logoColor=white)
-![Badge](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Handlebars](https://img.shields.io/badge/-Handlebars.js-F0772B?style=for-the-badge&logo=handlebars.js&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node\.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-<p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#features">Features</a> • 
- <a href="#autor">Autor</a>
-</p>
+## 📑 Table of Contents
 
-<h3 align="center"> 
-	🚧 Barril de Cerveja 👷‍ Em construção... 👷‍♀️  🚧
-</h3>
+- [📑 Table of Contents](#-table-of-contents)
+- [📖 Overview](#-overview)
+- [🛠️ Technologies](#-technologies)
+- [⚡ Performance & PWA](#-performance--pwa)
+- [🚀 Demo](#-demo)
+- [📦 Install and Use](#-install-and-use)
+- [📂 File Structure](#-file-structure)
+- [🎨 Reference & Inspiration](#-reference--inspiration)
+- [👨‍💻 Author and Contact](#%E2%80%8D-author-and-contact)
 
-<h2 id="features"> 📱 Features </h2>
+## 📖 Overview
 
-- [ ] Cadastro de funcionarios
-- [X] Cadastro de cervejas
+Beer Barrel is a full-stack content management platform designed around the beer industry, allowing users to browse products and brands through a responsive and user-friendly interface.
 
-<h2 id="tecnologias"> 🛠 Tecnologias </h2>
+The system includes a secure administrative dashboard with authentication, enabling the creation and management of beer listings, brand pages, and website content through dedicated CRUD operations. This architecture was designed to simulate real-world business requirements involving content management and user access control.
 
-As seguintes tecnologias foram usadas na construção do projeto:
+Developed using Node.js, Handlebars, MySQL, HTML5, CSS3, and JavaScript, the project highlights practical experience with database-driven applications, authentication systems, server-side rendering, and responsive web development.
 
-<ul>
-  <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML5</a></li>
-  <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS3</a></li>
-  <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></li>
-  <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
-  <li><a href="https://handlebarsjs.com/" target="_blank">Handlebars.js</a></li>
-  <li><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
-</ul>
+## 🛠 Technologies
 
-### Autor
+The following technologies were used to build this project:
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/55258483?s=96&v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Felipe De Andrade</b></sub></a>
+- [Handlebars.js](https://handlebarsjs.com/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Node.js](https://nodejs.org/en/)
+- [MySQL](https://www.mysql.com/)
 
-Feito com ❤️ por Felipe De Andrade 👋🏽 Entre em contato!
+## ⚡ Performance & PWA
 
-[![Linkedin Badge](https://img.shields.io/badge/-Felipe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fademendonca/)](https://www.linkedin.com/in/fademendonca/) 
-[![Gmail Badge](https://img.shields.io/badge/-felipe.deam98@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:felipe.deam98@gmail.com)](mailto:felipe.deam98@gmail.com)
+Coming Soon!
+
+## 🚀 Demo
+
+Coming Soon!
+
+### Desktop
+
+Coming Soon!
+
+### Mobile
+
+Coming Soon!
+
+## 📦 Install and Use
+
+This project currently operates without a local development server or build step, meaning it can be run directly from your file system.
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Epiled/barril-de-cerveja.git
+cd barril-de-cerveja
+```
+
+Coming Soon!
+
+## 📂 File Structure
+
+Coming Soon!
+
+## 🎨 Reference & Inspiration
+
+Coming Soon!
+
+## 👨‍💻 Author and Contact
+
+<a href="https://github.com/Epiled">
+  <img src="https://user-images.githubusercontent.com/55258483/178338085-2cea8bf2-6d0c-409a-9d0e-23359b7d303e.png" alt="Felindo">
+  <br />
+  <sub><b>Felipe De Andrade</b></sub>
+</a>
+
+Made with ❤️ by Felipe De Andrade 👋🏽 Get in touch!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fademendonca/)
+[![CodePen](https://img.shields.io/badge/CodePen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/epiled)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:felipe.deam98@gmail.com)
